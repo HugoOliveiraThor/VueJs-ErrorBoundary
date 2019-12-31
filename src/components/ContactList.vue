@@ -12,11 +12,13 @@
 </template>
 
 <script>
+import ErrorBoundary from './ErrorBoundary'
 import AppContact from "./Contact";
 export default {
   name: "ContactList",
   components: {
-    AppContact
+    AppContact,
+    ErrorBoundary
   },
   data: () => ({
     contacts: [
